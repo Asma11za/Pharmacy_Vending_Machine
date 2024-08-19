@@ -1,3 +1,5 @@
+<h2> Vending Machine State Table </h2>
+
 | Description | State |
 | --- | --- |
 | Select options | Q0 |
@@ -43,3 +45,25 @@
 | Product purchase not successful | Q59 |
 | Select card payment option | Q56 |
 | Select cash payment option | Q57 |
+
+<h2> Vending Machine Strings Table </h2>
+| String | Abbreviation | Description |
+| --- | --- | --- |
+| The skincare sector is selected by the user. | Op1 | The skincare sector is selected by the user. |
+| The medicine sector is selected by the user. | Op2 | The medicine sector is selected by the user. |
+| The user selects Nail polish. | SelNP | The user selects Nail polish. |
+| The user selects Makeup remover. | SelMR | The user selects Makeup remover. |
+| The user selects SPF. | SelSPF | The user selects SPF. |
+| The user selects Panadol. | SelPn | The user selects Panadol. |
+| The user selects Plaster. | SelPl | The user selects Plaster. |
+| The user selects Alcohol pads. | SelC | The user selects Alcohol pads. |
+| To check whether the product is inside the machine or not. | CheckAv | To check whether the product is inside the machine or not. |
+| The product is not inside the machine. | NotAv | The product is not inside the machine. |
+| The user will go back to the start state if the product was not inside the machine which is “q0” | Pnot | The user will go back to the start state if the product was not inside the machine which is “q0” |
+| The product is inside the machine. | Av | The product is inside the machine. |
+| The cost of the selected product | 10 | The cost of the selected product |
+| The cost of the selected product | 15 | The cost of the selected product |
+| The cost of the selected product | 5 | The cost of the selected product |
+| Successfully completed, the selected product has been delivered to the user. | Succ | Successfully completed, the selected product has been delivered to the user. |
+| User has not received the selected product due to an unsuccessful completion. | Nots | User has not received the selected product due to an unsuccessful completion. |
+
