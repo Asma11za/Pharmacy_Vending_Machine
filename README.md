@@ -47,6 +47,7 @@
 | Select cash payment option | Q57 |
 
 <h2> Vending Machine Strings Table </h2>
+
 | String | Abbreviation | Description |
 | --- | --- | --- |
 | The skincare sector is selected by the user. | Op1 | The skincare sector is selected by the user. |
