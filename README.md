@@ -73,3 +73,8 @@ this project proposes a design for a vending machine using Finite State Machines
 | Successfully completed, the selected product has been delivered to the user. | Succ | Successfully completed, the selected product has been delivered to the user. |
 | User has not received the selected product due to an unsuccessful completion. | Nots | User has not received the selected product due to an unsuccessful completion. |
 
+<h2> Finite Automata </h2>
+
+Continuing in the previous section, here's a drawing of the finite automata after all that has been explained, all the states and strings that are going to be involved.
+
+<img width="1243" src="https://github.com/user-attachments/assets/5d441db6-ada4-428b-8a86-c0fa9fbc1bcf">
