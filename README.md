@@ -89,6 +89,7 @@ Each section has exactly 3 products with different prices, if the user selects (
 (Q4) nail polish, (Q5) makeup remover, (Q6) SPF. So, when the user selects (Q6) for example, the machine will check first the availability of the product in the state (Q15). The availability has two cases:
 
 • If the product is available, the user will move to state (Q25). Then the user will have two payment methods either by credit card (Q30) or cash (Q31). The process of the two methods is the same for the two states. So, if the user selects pay by credit card (Q30) the process is either successful (Q39) which is the final state, or not successful which is state (Q40) which is also a final state.
+
 • If the product is not available, the state of the product will go back to the initial state and start the machine process. The scenario applies the same for each product in the automata.
 
 <h2> Biuld NFA </h2>
@@ -179,4 +180,41 @@ Each section has exactly 3 products with different prices, if the user selects (
 
 <img width="1000" src="https://github.com/user-attachments/assets/4956f279-9672-40c3-8fae-ddbb7406b0bc">
 
+<h2> Production Rules for NFA </h2>
+
+q0    → Op1 q1 | Op2 q2
+q1    → SelNP q4 | SelMR q5 | SelSPF q6
+q2    → SelPn q7 | SelPl q8 | SelC q9 
+q4    → CheckAv q13 
+q5    → CheckAv q14
+q6    → CheckAv q15 
+q7    → CheckAv q17
+q8    → CheckAv q18
+q9    → CheckAv q19
+q13   → Av q23 | NotAv q32 
+q14   → Av q24 | NotAv q32 
+q15   → Av q25 | NotAv q32 
+q16   → Nots q54 | Succ q3 
+q17   → Av q42 | NotAv q45
+q18   → Av q43 | NotAv q45
+q19   → Av q44 | NotAv q45
+q23   → 10 q26, q27 
+q24   → 15 q28, q29
+q25   → 55 q30, q31 
+q26   → Nots q34 | Succ q3 
+q27   → Nots q34 | Succ q3 
+q28   → Nots q37 | Succ q3 
+q29   → Nots q37 | Succ q3 
+q30   → Nots q40 | Succ q3 
+q31   → Nots q40 | Succ q3 
+q32   → Pnot q0 
+q42   → 5 q46, q47 
+q43   → 15 q16, q52 
+q44   → 10 q56, q57 
+q45   → Pnot q0
+q46   → Nots q50 | Succ q3
+q47   → Nots q50 | Succ q3
+q52   → Nots q54 | Succ q3 
+q56   → Nots q59 | Succ q3 
+q57   → Nots q59 | Succ q3 
 
