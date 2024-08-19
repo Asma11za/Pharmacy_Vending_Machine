@@ -1,4 +1,6 @@
 <h1> Pharamcay Vending Machine </h1>
+<img width="500" alt="Screen Shot 2024-08-20 at 2 24 21 AM" src="https://github.com/user-attachments/assets/3c983061-4125-4fab-aaa6-f0f1ccd54132">
+
 <h2> About </h2>
 
 This project proposes a design for a vending machine using Finite State Machines, which will be presented in markets, restaurants, universities, and other places where people gather. The vending machine will sell medical products such as wound plasters, cotton, headache pills, and others for use when the user is suffering from an injury, or wound, or feeling unwell and cannot reach a pharmacy or hospital. Also, products related to skincare and oral care. This project involves the construction of a finite automaton that contains three main sectors which are: medicines, skincare, and oral care.
