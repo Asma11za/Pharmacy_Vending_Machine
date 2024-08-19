@@ -77,4 +77,19 @@ this project proposes a design for a vending machine using Finite State Machines
 
 Continuing in the previous section, here's a drawing of the finite automata after all that has been explained, all the states and strings that are going to be involved.
 
-<img width="1243" src="https://github.com/user-attachments/assets/5d441db6-ada4-428b-8a86-c0fa9fbc1bcf">
+<img width="1000" src="https://github.com/user-attachments/assets/5d441db6-ada4-428b-8a86-c0fa9fbc1bcf">
+
+<h2> Scenario </h2> 
+
+Starting from the initial state (Q0) The user has 3 sector options to choose from:
+1. (Q1) Makeup Section
+2. (Q2) Pharmacy Section
+3. (Q3) Oral care Section
+Each section has exactly 3 products with different prices, if the user selects (Q1) it will take them to the makeup section (Q1) which has 3 products to choose from:
+(Q4) nail polish, (Q5) makeup remover, (Q6) SPF. So, when the user selects (Q6) for example, the machine will check first the availability of the product in the state (Q15). The availability has two cases:
+
+• If the product is available, the user will move to state (Q25). Then the user will have two payment methods either by credit card (Q30) or cash (Q31). The process of the two methods is the same for the two states. So, if the user selects pay by credit card (Q30) the process is either successful (Q39) which is the final state, or not successful which is state (Q40) which is also a final state.
+• If the product is not available, the state of the product will go back to the initial state and start the machine process. The scenario applies the same for each product in the automata.
+9
+
+
