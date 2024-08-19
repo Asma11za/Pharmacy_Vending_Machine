@@ -3,6 +3,10 @@
 
 This project proposes a design for a vending machine using Finite State Machines, which will be presented in markets, restaurants, universities, and other places where people gather. The vending machine will sell medical products such as wound plasters, cotton, headache pills, and others for use when the user is suffering from an injury, or wound, or feeling unwell and cannot reach a pharmacy or hospital. Also, products related to skincare and oral care. This project involves the construction of a finite automaton that contains three main sectors which are: medicines, skincare, and oral care.
 
+<h2> Vending machine simulator </h2>
+
+The vending machine simulator can process product sales transactions by taking the selection of products by the user as input and printing the amount of money as an output. The vending machine provides payment methods to make it easier for the user to pay. However, if the user paid with cash. Only money from type 5 SR, 10 SR, and 15SR is accepted, otherwise the process will be rejected.
+
 <h2> Vending Machine State Table </h2>
 
 | Description | State |
